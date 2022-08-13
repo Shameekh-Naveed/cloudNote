@@ -1,11 +1,6 @@
-import React, { useContext, useState } from "react";
-import PropTypes from "prop-types";
-// import DeleteNote from "./DeleteNote";
-// import NoteFormModal from "./NoteFormModal";
+import React, {useState } from "react";
 import CustomModal from "./CustomModal";
-import NoteContext from "../Contexts/notes/NoteContext";
 import DeleteModal from "./DeleteModal";
-// import NoteContext from "../Contexts/notes/NoteContext";
 
 const NoteItem = (props) => {
   // const props = useContext(NoteContext);
@@ -16,34 +11,8 @@ const NoteItem = (props) => {
   const [modalDeleteDisplay, setModalDeleteDisplay] = useState(false);
   const [modalEditDisplay, setModalEditDisplay] = useState(false);
 
-  // const updateNote = () => {
-  //   const updatedNote = {
-
-  //     title: "Totally New Note",
-  //     description: "Hello this is a Totally New new note",
-  //     tags: "General",
-  //   };
-  //   const newNotes = a.notesArray;
-  //   newNotes.forEach((note) => {
-  //     if (note.__id === id) {
-  //       note.title = updatedNote.title;
-  //       note.description = updatedNote.description;
-  //       note.tags = updatedNote.tags;
-  //     }
-  //   });
-  //   setNotesArray(newNotes);
-  // };
-
-  // const deleteNote = () => {
-  //   console.log("delete Note");
-  // };
-
-  const editNote = () => {
-    // noteForm.toggle()
-    console.log("edit Note");
-    // setModalDisply(true);
-  };
-
+ 
+ 
   return (
     <div className="card py-2 px-2 m-2" style={{ width: "23rem" }}>
       <div className="card-body">
@@ -55,6 +24,7 @@ const NoteItem = (props) => {
             // onClick={deleteNote}
             style={{ cursor: "pointer" }}
             onClick={() => setModalDeleteDisplay(true)}
+            alt='delete'
             // data-bs-toggle="modal"
             // data-bs-target="#deleteNote"
           />
@@ -71,6 +41,7 @@ const NoteItem = (props) => {
             // data-bs-toggle="modal"
             // data-bs-target="#noteForm"
             onClick={() => setModalEditDisplay(true)}
+            alt="edit"
           />
           <CustomModal
             // onSubmit={contextProps.updateNote(id)}
@@ -87,11 +58,9 @@ const NoteItem = (props) => {
         <h6 className="card-subtitle mb-2 text-muted">{tags}</h6>
         <p className="card-text ">{description}</p>
       </div>
-      {/* <DeleteNote /> */}
     </div>
   );
 };
 
-// NoteItem.propTypes = {}
 
 export default NoteItem;
