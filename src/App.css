@@ -1,0 +1,53 @@
+/* CSS HEX */
+/* --languid-lavender: #e2cfeaff;
+--amethyst: #a06cd5ff;
+--plump-purple: #6247aaff;
+--bittersweet: #ff6663ff;
+--tea-green: #dbebc0ff;
+--pale-purple-pantone: #eee3f3ff; 
+--magnolia: #f6f1f9ff*/
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+.logo-start{
+  color:#a06cd5ff;
+  font-family: 'DynaPuff', cursive;
+}
+.logo-end{
+  color: #6247aaff;
+  font-family: 'DynaPuff', cursive;
+}
+
+.App{
+  background-color: #f6f1f9ff;
+}
+
+h1{
+  font-weight: 1000;
+  font-size: 4rem;
+}
+h2{
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+.navbar{
+  /* background-color: #ffff; */
+}
+.btn-prime{
+  background-color: #664cfd;
+  color: #fff;
+  border: none;
+  /* min-width: 4rem; */
+}
+.btn-prime:hover{
+  background-color: #6247aaff;
+  color: #fff;
+  border: none;
+
+}
+.btn-prime:disabled{
+  background-color: #a06cd5ff;
+  color: #fff;
+  border: none;
+
+}
