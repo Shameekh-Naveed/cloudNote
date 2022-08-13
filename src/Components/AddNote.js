@@ -17,7 +17,7 @@ const AddNote = () => {
 
   return (
     <div className="row container-fluid py-3 justify-content-between ">
-      <div className="col-6">
+      <div className="col-md-6">
         <h1 className="text-start"><span className="logo-start">cloud</span><span className="logo-end">Note</span></h1>
         <h3 className="text-start">Keep your notes with you</h3>
         <p className="text-start lead">
@@ -49,8 +49,9 @@ const AddNote = () => {
         )}
         {!contextProps.loginStatus && <LoginSignupModal />}
       </div>
-      <div className="col-4 d-flex justify-content-center">
+      <div className="col-md-4 d-flex justify-content-center">
         <img
+          className="img-fluid"
           src={cartoon}
           alt=""
           style={{ height: "auto", maxWidth: "400px" }}
